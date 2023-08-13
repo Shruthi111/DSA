@@ -4,8 +4,7 @@ import java.util.List;
 public class Factors {
     public static void main(String[] args) {
         int n=36;
-
-        findFactors3(n);
+        findFactors2(n);
     }
 
     // O(n)
@@ -21,7 +20,7 @@ public class Factors {
         for(int i=1;i<=Math.sqrt(n);i++){
             if(n%i==0 && n/i==i)
             System.out.print(i+" ");
-            else
+            else if(n%i==0)
             System.out.print(i+" "+n/i+" ");
         }
     }

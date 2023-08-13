@@ -9,16 +9,21 @@ public class aRaiseb {
         int power=6;
         int ans=1;
 
-        while(power!=0){
-            int ld=power & 1;
-            if(ld==1)
-            ans*=base;
+        // this takes O(log(power))
+        // while(power!=0){
+        //     int ld=power & 1;
+        //     if(ld==1)
+        //     ans*=base;
 
-            base*=base;
-            power>>=1;
+        //     base*=base;
+        //     power>>=1;
+        // }
+
+        for(int i=1;i<=power;i++){
+            ans*=base;
         }
 
         System.out.println(ans);
-        // this takes O(log(power))
+        
     }
 }

@@ -10,17 +10,17 @@ public class gcd {
         System.out.println(lcm);
     }
     static int findGcd1(int a,int b){
-        while(a!=0){
+        while(b!=0){
             int temp=a;
-            a=b%a;
-            b=temp;
+            a=b;
+            b=temp%b;
         }
-        return b;
+        return a;
     }
     static int findGcd2(int a,int b){
-        if(a==0)
-        return b;
+        if(b==0)
+        return a;
 
-        return findGcd2(b%a, a);
+        return findGcd2(b,a%b);
     }
 }

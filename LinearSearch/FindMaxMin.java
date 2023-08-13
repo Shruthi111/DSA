@@ -14,11 +14,11 @@ public class FindMaxMin {
         return max;
     }
     static int getMin(int arr[]){
-        int max=arr[0];
+        int min=arr[0];
         for(int ele:arr){
-            if(ele<max)
-            max=ele;
+            if(ele<min)
+            min=ele;
         }
-        return max;
+        return min;
     }
 }

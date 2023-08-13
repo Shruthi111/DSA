@@ -26,7 +26,8 @@ public class Sqrt {
 
         for(int i=1;i<=p;i++){
             while(root*root<=n)
-            root+=inc;
+                root+=inc;
+                
             root= root-inc;
             inc/=10;
         }
