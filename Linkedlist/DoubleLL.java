@@ -16,6 +16,7 @@ class DLL{
 
     void insertFirst(String data){
         Node newnode=new Node(data);
+        size++;
 
         if(head==null){
             head=newnode;

@@ -9,7 +9,8 @@ public class javaLL {
         // list.removeFirst();
         // list.removeLast();
         list.remove(1);
-        // System.out.println(list);
+        System.out.println(list);
+        
 
         for(int i=0;i<list.size();i++){
             System.out.print(list.get(i)+"->");

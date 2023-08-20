@@ -28,17 +28,33 @@ import java.util.Arrays;
 //     }
 // }
 
+// public class MissingNo {
+//     public static void main(String[] args) {
+//         int arr[]={4,3,2,7,8,5,0,1};
+//         int sum=0;
+//         for(int i=0;i<arr.length;i++){
+//             sum+=arr[i];
+//         }
+
+//         int actual_sum=arr.length*(arr.length+1)/2;
+
+//         System.out.println(actual_sum-sum);
+
+//     }
+    
+// }
+
 public class MissingNo {
     public static void main(String[] args) {
         int arr[]={4,3,2,7,8,5,0,1};
         int sum=0;
-        for(int i=0;i<arr.length;i++){
-            sum+=arr[i];
+        for(int i=0;i<=arr.length;i++){
+            sum^=i;
+            if(i<arr.length)
+            sum^=arr[i];
         }
 
-        int actual_sum=arr.length*(arr.length+1)/2;
-
-        System.out.println(actual_sum-sum);
+        System.out.println(sum);
 
     }
     
